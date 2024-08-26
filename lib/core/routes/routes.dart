@@ -1,0 +1,33 @@
+class NavigationStrings {
+  static const String splash = "splash";
+  static const auth = "auth";
+  static const forgetPassword = "forgetPassword";
+  static const verifyCode = "verifyCode";
+  static const confirmVerificationCode = "confirmVerificationCode";
+  static const newPassword = "newPassword";
+  static const successCreationPassword = "successCreationPassword";
+  static const location = "location";
+  static const home = "home";
+  static const onboard = "onboard";
+  static const editProfile = "editProfile";
+  static const settings = "settings";
+  static const privacyAndLocation = "privacyAndLocation";
+  static const notifications = "notifications";
+  static const language = "language";
+  static const clearCache = "clearCache";
+  static const supportHelp = "supportHelp";
+  static const reportProblem = "reportProblem";
+  static const needHelp = "needHelp";
+  static const termsConditions = "termsConditions";
+  static const main = "main";
+  static const learnMore = "learnMore";
+  static const successOperation = "successOperation";
+  static const addPost = "addPost";
+  static const String discover = "discover";
+  static const String message = "message";
+  static const String planTrip = "planTrip";
+  static const String resultPlanTrip = "resultPlanTrip";
+  static const String friendsDiscover = "friendsDiscover";
+  static const String joinCommunity = "joinCommunity";
+  static const String chatWithCommunity = "chatWithCommunity";
+}
