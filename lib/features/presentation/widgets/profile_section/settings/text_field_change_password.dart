@@ -1,20 +1,20 @@
 part of 'widgets_imports.dart';
 
-class TextFieldProfile extends StatelessWidget {
+class TextFieldChangePassword extends StatelessWidget {
   final String hintText;
   final bool? isSuffix;
   final void Function()? onPressed;
   final TextEditingController? controller;
   final String? Function(String?)? validator;
-  final bool? obscureText;
-  const TextFieldProfile(
+  final bool obscureText;
+  const TextFieldChangePassword(
       {super.key,
       required this.hintText,
       this.isSuffix = false,
       this.onPressed,
       this.controller,
       this.validator,
-      this.obscureText});
+      required this.obscureText});
 
   @override
   Widget build(BuildContext context) {
@@ -32,8 +32,8 @@ class TextFieldProfile extends StatelessWidget {
             ? GestureDetector(
                 onTap: onPressed,
                 child: Icon(
-                  Icons.arrow_forward_ios,
-                  color: AppColors.secondaryColor,
+                  obscureText ? Icons.visibility : Icons.visibility_off,
+                  color: AppColors.primaryColor,
                 ))
             : null,
         border: OutlineInputBorder(

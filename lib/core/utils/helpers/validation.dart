@@ -54,4 +54,22 @@ class Validators {
     }
     return null;
   }
+
+  static String? newPasswordValidator(String? value) {
+    if (value == null || value.isEmpty) {
+      return 'Un nouveau mot de passe est requis';
+    } else if (value.length < 8) {
+      return 'Le mot de passe doit contenir plus de 8 caractères';
+    }
+    return null;
+  }
+
+  static String? oldPasswordValidator(String? value) {
+    if (value == null || value.isEmpty) {
+      return 'Un ancien mot de passe est requis';
+    } else if (value.length < 8) {
+      return 'Le mot de passe doit contenir plus de 8 caractères';
+    }
+    return null;
+  }
 }

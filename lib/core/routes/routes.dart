@@ -30,4 +30,5 @@ class NavigationStrings {
   static const String friendsDiscover = "friendsDiscover";
   static const String joinCommunity = "joinCommunity";
   static const String chatWithCommunity = "chatWithCommunity";
+  static const String modifyPassword = "modifyPassword";
 }

@@ -17,6 +17,7 @@ import 'package:trekr_second/features/presentation/pages/global/plan_trip/plan_t
 import 'package:trekr_second/features/presentation/pages/global/plan_trip/result_plan_trip.dart';
 import 'package:trekr_second/features/presentation/pages/global/profie_section/settings/clear_cache_screen.dart';
 import 'package:trekr_second/features/presentation/pages/global/profie_section/settings/language_screen.dart';
+import 'package:trekr_second/features/presentation/pages/global/profie_section/settings/modify_password_screen.dart';
 import 'package:trekr_second/features/presentation/pages/global/profie_section/settings/notifications_screen.dart';
 import 'package:trekr_second/features/presentation/pages/global/profie_section/settings/privacy_and_location.dart';
 import 'package:trekr_second/features/presentation/pages/global/profie_section/settings/settings_screen.dart';
@@ -159,6 +160,8 @@ class OnGenerateRoute {
         return routeBuilder(const SuccessCreationPasswordScreen());
       case NavigationStrings.chatWithCommunity:
         return routeBuilder(const ChatWithCommunityScreen());
+      case NavigationStrings.modifyPassword:
+        return routeBuilder(const ModifyPasswordScreen());
     }
   }
 }

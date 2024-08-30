@@ -132,7 +132,7 @@ class _MessageScreenState extends State<MessageScreen> {
           if (data.contains('WebSocket connection closed')) {
             messageList.add(MessageEntity(
               content: 'WebSocket connection closed',
-              sender: SenderEntity(id: 0),
+              sender: const SenderEntity(id: 0),
               timestamp: DateTime.now().toIso8601String(),
               messageType: MessageType.system,
             ));

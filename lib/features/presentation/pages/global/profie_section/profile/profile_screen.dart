@@ -210,8 +210,8 @@ class _ProfileScreenState extends State<ProfileScreen>
                       controller: _tabController,
                       //physics: const BouncingScrollPhysics(),
                       children: const [
-                        GridViewPostsAndReels(count: 16),
-                        GridViewPostsAndReels(count: 16)
+                        GridViewPostsAndReels(),
+                        GridViewPostsAndReels()
                       ]),
                 )
               ])),

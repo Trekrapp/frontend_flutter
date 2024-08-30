@@ -6,6 +6,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:trekr_second/features/presentation/cubit/messages/websocket/websocket_cubit.dart';
 import 'package:trekr_second/features/presentation/cubit/posts/get_posts/get_posts_cubit.dart';
 import 'package:trekr_second/features/presentation/cubit/posts/reaction_post/reaction_post_cubit.dart';
+import 'package:trekr_second/features/presentation/cubit/user/change_password/change_password_cubit.dart';
 import 'package:trekr_second/features/presentation/cubit/user/forgot_password/forgot_password_cubit.dart';
 import 'package:trekr_second/features/presentation/pages/auth/auth_screen.dart';
 
@@ -17,6 +18,7 @@ import 'features/data/data_sources/remote/remote_data_source_impl.dart';
 import 'features/presentation/cubit/comment/create_comment/create_comment_cubit.dart';
 import 'features/presentation/cubit/comment/get_comment_by_post_id/get_comment_by_post_id_cubit.dart';
 import 'features/presentation/cubit/messages/get_messages/get_messages_cubit.dart';
+import 'features/presentation/cubit/posts/get_posts_user/get_posts_user_cubit.dart';
 import 'features/presentation/cubit/search/search/search_posts_users_cubit.dart';
 import 'features/presentation/cubit/user/auth/auth_cubit.dart';
 import 'features/presentation/cubit/user/create_new_password/create_new_password_cubit.dart';
@@ -52,6 +54,8 @@ class MyApp extends StatelessWidget {
         BlocProvider(create: (_) => locator<GetCommentByPostIdCubit>()),
         BlocProvider(create: (_) => locator<CreateCommentCubit>()),
         BlocProvider(create: (_) => locator<ReactionPostCubit>()),
+        BlocProvider(create: (_) => locator<GetPostsUserCubit>()),
+        BlocProvider(create: (_) => locator<ChangePasswordCubit>()),
       ],
       child: ScreenUtilInit(
         minTextAdapt: true,

@@ -26,8 +26,12 @@ class SettingsScreen extends StatelessWidget {
             SizedBox(
               height: 20.h,
             ),
-            const SettingsItem(
-                icon: Icons.person_2_outlined, title: "Profil et Identité"),
+            SettingsItem(
+              icon: Icons.person_2_outlined,
+              title: "Profil et Identité",
+              onPressed: () => Navigator.pushNamed(
+                  context, NavigationStrings.modifyPassword),
+            ),
             SizedBox(
               height: 10.h,
             ),

@@ -48,4 +48,8 @@ class AppAssets {
   static const String path3 = "$imagePath/path3.png";
   static const String check = "$iconPath/check.png";
   static const String background = "$imagePath/background.png";
+  static const String asia = "$imagePath/asia.jpg";
+  static const String america = "$imagePath/america.jpg";
+  static const String africa = "$imagePath/africa.jpg";
+  static const String europe = "$imagePath/europe.jpg";
 }

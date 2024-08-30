@@ -35,5 +35,12 @@ class AppColors {
   static const Color greyCloudy = Color(0xff545454);
   static const Color magnolia = Color(0xffF4F3FD);
   static const Color mistBlue = Color(0xff686A8A);
-  //Gainsboro
+
+  static LinearGradient categoryGradient = LinearGradient(
+      begin: Alignment.topCenter,
+      end: Alignment.bottomCenter,
+      colors: [
+        const Color(0xffFFFFFF).withOpacity(0.51),
+        const Color(0xff000000).withOpacity(0.2),
+      ]);
 }

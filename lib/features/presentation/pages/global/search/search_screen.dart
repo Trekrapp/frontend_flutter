@@ -68,11 +68,9 @@ class SearchScreen extends StatelessWidget {
                                     postId: post.id,
                                     userImage:
                                         "http://213.130.144.203:8084/files/${post.user!.profileImageUrl}",
-                                    userImageExist: post.user != null
-                                        ? post.user!.profileImageUrl!.isNotEmpty
-                                            ? true
-                                            : false
-                                        : null,
+                                    userImageExist: post.user?.profileImageUrl
+                                            ?.isNotEmpty ??
+                                        false,
                                     username: post.user != null
                                         ? post.user!.username!
                                         : "Claire",

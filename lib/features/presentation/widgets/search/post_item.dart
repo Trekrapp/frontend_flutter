@@ -241,8 +241,20 @@ class _PostItemState extends State<PostItem> {
       context: context,
       isScrollControlled: true,
       builder: (context) {
-        return CommentItem(
-          postId: postId,
+        return NotificationListener<ScrollNotification>(
+          onNotification: (scrollNotification) {
+            if (scrollNotification is ScrollEndNotification) {
+              final metrics = scrollNotification.metrics;
+              if (metrics.extentAfter == 0) {
+                // The user has scrolled to the bottom, so close the modal
+                Navigator.of(context).pop();
+              }
+            }
+            return true;
+          },
+          child: CommentItem(
+            postId: postId,
+          ),
         );
       },
     );
